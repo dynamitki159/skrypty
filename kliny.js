@@ -62,7 +62,7 @@ if(!$("#planer_klinow").length){
 	var predkosc_swiata = Number((dane.predkosc_gry * dane.predkosc_jednostek).toFixed(5));
 	for(i = 0; i < dane.predkosci.length; i++){
 		minimalna_ilosc_wojsk[i] = 0;
-		dane.predkosci[i] /= predkosc_swiata+amulet;
+		dane.predkosci[i] /= (predkosc_swiata+amulet);
 	}
 	rysujPlaner();
 	pobierzDane();
